@@ -1,3 +1,7 @@
+### 操你妈360 / Fuck Qihoo 360
+
+在 开启软件/打包软件 之前，请先把 360以及腾讯电脑管家 关闭！
+
 # 明日方舟电子通行证干员数据生成器
 The configuration file maker of "Arknights Authorization Android Edition"
 
