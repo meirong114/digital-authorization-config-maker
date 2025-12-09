@@ -5,9 +5,9 @@ import os
 import webbrowser
 
 def compress_files(output_filename, files):
+    file = "./configs/" + output_filename
     # 调用7za.exe进行压缩
-    subprocess.run(['7za', 'a', f'-tzip', output_filename] + files, check=True)
-    subprocess.run(["./7-Zip/7zFM.exe", output_filename])
+    subprocess.run(['7za', 'a', f'-tzip', file] + files, check=True)
 
 def generate_introduction():
     # 打开介绍生成器
@@ -79,6 +79,8 @@ def start_generating():
     files = ["char.mp4", "介绍.txt", "信息.txt", "职业.png"]
     compress_files(output_filename, files)
     messagebox.showinfo("成功", "配置文件已生成")
+    file = "./configs/" + output_filename
+    subprocess.run(["./sevenzip/7zFM.exe", file])
 
 def open_github(self):
     # 打开GitHub

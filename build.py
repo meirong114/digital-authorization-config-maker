@@ -14,7 +14,8 @@ build_exe_options = {
         ("app.ico", "app.ico"),
         ("app.png", "app.png"),
         ("7za.exe", "7za.exe"),
-        ("7-Zip", "7-Zip")
+        ("sevenzip", "sevenzip"),
+        ("configs", "configs")
     ],
     "excludes": [],
     "optimize": 2,
